@@ -1,0 +1,23 @@
+dependencies: \
+  /Users/Mel/Documents/personal/cursos/react-native/expenses/expenses-app/node_modules/react-native/React/Modules/RCTDevSettings.mm \
+  /Users/Mel/Documents/personal/cursos/react-native/expenses/expenses-app/node_modules/react-native/React/Modules/RCTDevSettings.h \
+  /Users/Mel/Documents/personal/cursos/react-native/expenses/expenses-app/node_modules/react-native/React/Base/RCTBridge.h \
+  /Users/Mel/Documents/personal/cursos/react-native/expenses/expenses-app/node_modules/react-native/React/Base/RCTBridgeDelegate.h \
+  /Users/Mel/Documents/personal/cursos/react-native/expenses/expenses-app/node_modules/react-native/React/Base/RCTJavaScriptLoader.h \
+  /Users/Mel/Documents/personal/cursos/react-native/expenses/expenses-app/node_modules/react-native/React/Base/RCTDefines.h \
+  /Users/Mel/Documents/personal/cursos/react-native/expenses/expenses-app/node_modules/react-native/React/Base/RCTBridgeModule.h \
+  /Users/Mel/Documents/personal/cursos/react-native/expenses/expenses-app/node_modules/react-native/React/Base/RCTFrameUpdate.h \
+  /Users/Mel/Documents/personal/cursos/react-native/expenses/expenses-app/node_modules/react-native/React/Base/RCTInvalidating.h \
+  /Users/Mel/Documents/personal/cursos/react-native/expenses/expenses-app/ios/build/Build/Products/Debug-iphonesimulator/include/jschelpers/JavaScriptCore.h \
+  /Users/Mel/Documents/personal/cursos/react-native/expenses/expenses-app/ios/build/Build/Products/Debug-iphonesimulator/include/jschelpers/JSCWrapper.h \
+  /Users/Mel/Documents/personal/cursos/react-native/expenses/expenses-app/node_modules/react-native/React/Base/RCTBridge+Private.h \
+  /Users/Mel/Documents/personal/cursos/react-native/expenses/expenses-app/node_modules/react-native/React/Base/RCTEventDispatcher.h \
+  /Users/Mel/Documents/personal/cursos/react-native/expenses/expenses-app/node_modules/react-native/React/Modules/RCTJSCSamplingProfiler.h \
+  /Users/Mel/Documents/personal/cursos/react-native/expenses/expenses-app/node_modules/react-native/React/Base/RCTLog.h \
+  /Users/Mel/Documents/personal/cursos/react-native/expenses/expenses-app/node_modules/react-native/React/Base/RCTAssert.h \
+  /Users/Mel/Documents/personal/cursos/react-native/expenses/expenses-app/node_modules/react-native/React/Base/RCTUtils.h \
+  /Users/Mel/Documents/personal/cursos/react-native/expenses/expenses-app/node_modules/react-native/React/DevSupport/RCTPackagerClient.h \
+  /Users/Mel/Documents/personal/cursos/react-native/expenses/expenses-app/node_modules/react-native/React/Profiler/RCTProfile.h \
+  /Users/Mel/Documents/personal/cursos/react-native/expenses/expenses-app/node_modules/react-native/React/DevSupport/RCTPackagerConnection.h \
+  /Users/Mel/Documents/personal/cursos/react-native/expenses/expenses-app/node_modules/react-native/React/DevSupport/RCTInspectorDevServerHelper.h \
+  /Users/Mel/Documents/personal/cursos/react-native/expenses/expenses-app/node_modules/react-native/React/Inspector/RCTInspectorPackagerConnection.h
