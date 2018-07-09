@@ -9,30 +9,61 @@ const onPressLearnMore = function(){
 const expenses = props => {
     return(
         <View style={{flex: 1, flexDirection: 'row'}}>
-            <TouchableOpacity onPress={onPressLearnMore}
-                              style={styles.button}>
-                <Text> Touch Here </Text>
-            </TouchableOpacity>
-            <TouchableOpacity onPress={onPressLearnMore}
-                              style={styles.button2}>
-                <Text> Touch Here </Text>
-            </TouchableOpacity>
+            <View style={styles.buttonContainer}>
+                <TouchableOpacity onPress={onPressLearnMore}
+                                  style={styles.button}>
+                    <Text style={styles.buttonTitle}> SALIDITAS </Text>
+                    <Text style={styles.buttonAvailable}> 100.00 </Text>
+                    <Text style={styles.buttonWholeAmount}> 1000.00 </Text>
+                </TouchableOpacity>
+            </View>
+            <View style={styles.buttonContainer}>
+                <TouchableOpacity onPress={onPressLearnMore}
+                                  style={styles.button}>
+                    <Text style={styles.buttonTitle}> DESPENSA </Text>
+                    <Text style={styles.buttonAvailable}> 100.00 </Text>
+                    <Text style={styles.buttonWholeAmount}> 1000.00 </Text>
+                </TouchableOpacity>
+            </View>
         </View>
     );
 };
 
 const styles = StyleSheet.create({
+    buttonContainer: {
+        padding: 10,
+        flex: 1
+    },
+    buttonTitle: {
+        color: '#2f7092',
+        paddingTop: 10,
+        fontSize: 22,
+        fontWeight: '200'
+    },
+    buttonAvailable: {
+        fontSize: 15,
+        position: "absolute",
+        bottom: 25,
+        right: 10
+    },
+    buttonWholeAmount: {
+        fontSize: 12,
+        position: "absolute",
+        bottom: 10,
+        right: 10,
+        color: '#86777e'
+    },
     button: {
         alignItems: 'center',
-        flex: 1,
-        backgroundColor: 'powderblue',
-        height: 200
-    },
-    button2: {
-        alignItems: 'center',
-        flex: 1,
-        backgroundColor: 'steelblue',
-        height: 200
+        backgroundColor: '#ffffff',
+        height: 150,
+        shadowColor: '#d2d2d2',
+        shadowOffset: {
+            width: 0,
+            height: 2
+        },
+        shadowRadius: 3,
+        shadowOpacity: 2.0,
     }
 });
 
