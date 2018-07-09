@@ -1,37 +1,79 @@
 import React from 'react';
-import {StyleSheet, TouchableOpacity, Text, View} from 'react-native';
+import {StyleSheet, TouchableOpacity, Text, View, ScrollView} from 'react-native';
 
 
-const onPressLearnMore = function(){
-    console.log("holi");
+
+const onPressLearnMore = function(key){
+    console.log("holi ", key);
 };
+
+const expensesList = [{title: "SALIDITAS", availableAmount: 100, totalAmount: 1000},
+    {title: "DESPENSA", availableAmount: 100, totalAmount: 1000},
+    {title: "GASOLINA", availableAmount: 200, totalAmount: 1000},
+    {title: "COMIDA", availableAmount: 500, totalAmount: 4000},
+    {title: "DOCTOR", availableAmount: 90, totalAmount: 2000},
+    {title: "PERRITOS", availableAmount: 160, totalAmount: 1000},
+    {title: "COCHE", availableAmount: 675, totalAmount: 1000},
+    {title: "ESTETICA", availableAmount: 40, totalAmount: 500}];
 
 const expenses = props => {
     return(
-        <View style={{flex: 1, flexDirection: 'row'}}>
-            <View style={styles.buttonContainer}>
-                <TouchableOpacity onPress={onPressLearnMore}
-                                  style={styles.button}>
-                    <Text style={styles.buttonTitle}> SALIDITAS </Text>
-                    <Text style={styles.buttonAvailable}> 100.00 </Text>
-                    <Text style={styles.buttonWholeAmount}> 1000.00 </Text>
-                </TouchableOpacity>
+        <ScrollView style={{flex: 1, flexDirection: 'column'}}>
+
+            {
+
+                expensesList.map((item) =>
+                    (
+                        <View style={styles.buttonContainer}>
+                            <TouchableOpacity onPress={() => onPressLearnMore(item)}
+                                              key={item.title}
+                                              style={styles.button}>
+                                <Text style={styles.buttonTitle}> {item.title} </Text>
+                                <Text style={styles.buttonAvailable}> {item.availableAmount} </Text>
+                                <Text style={styles.buttonWholeAmount}> {item.totalAmount} </Text>
+                            </TouchableOpacity>
+                        </View>
+                    ))
+
+            }
+
+            {/*<View style={{flex: 1, flexDirection: 'row'}}>*/}
+                {/*<View style={styles.buttonContainer}>*/}
+                    {/*<TouchableOpacity onPress={onPressLearnMore}*/}
+                                      {/*style={styles.button}>*/}
+                        {/*<Text style={styles.buttonTitle}> SALIDITAS </Text>*/}
+                        {/*<Text style={styles.buttonAvailable}> 100.00 </Text>*/}
+                        {/*<Text style={styles.buttonWholeAmount}> 1000.00 </Text>*/}
+                    {/*</TouchableOpacity>*/}
+                {/*</View>*/}
+                {/*<View style={styles.buttonContainer}>*/}
+                    {/*<TouchableOpacity onPress={onPressLearnMore}*/}
+                                      {/*style={styles.button}>*/}
+                        {/*<Text style={styles.buttonTitle}> DESPENSA </Text>*/}
+                        {/*<Text style={styles.buttonAvailable}> 100.00 </Text>*/}
+                        {/*<Text style={styles.buttonWholeAmount}> 1000.00 </Text>*/}
+                    {/*</TouchableOpacity>*/}
+                {/*</View>*/}
+            {/*</View>*/}
+
+
+
+            <View style={{flex: 1, flexDirection: 'row'}}>
+                <View style={styles.buttonContainer}>
+                    <TouchableOpacity onPress={onPressLearnMore}
+                                      style={styles.button}>
+                        <Text style={styles.plusSign}> + </Text>
+                    </TouchableOpacity>
+                </View>
             </View>
-            <View style={styles.buttonContainer}>
-                <TouchableOpacity onPress={onPressLearnMore}
-                                  style={styles.button}>
-                    <Text style={styles.buttonTitle}> DESPENSA </Text>
-                    <Text style={styles.buttonAvailable}> 100.00 </Text>
-                    <Text style={styles.buttonWholeAmount}> 1000.00 </Text>
-                </TouchableOpacity>
-            </View>
-        </View>
+        </ScrollView>
+
     );
 };
 
 const styles = StyleSheet.create({
     buttonContainer: {
-        padding: 10,
+        padding: 5,
         flex: 1
     },
     buttonTitle: {
@@ -39,6 +81,10 @@ const styles = StyleSheet.create({
         paddingTop: 10,
         fontSize: 22,
         fontWeight: '200'
+    },
+    plusSign: {
+        color: '#2f7092',
+        fontSize: 60
     },
     buttonAvailable: {
         fontSize: 15,
@@ -56,7 +102,7 @@ const styles = StyleSheet.create({
     button: {
         alignItems: 'center',
         backgroundColor: '#ffffff',
-        height: 150,
+        height: 90,
         shadowColor: '#d2d2d2',
         shadowOffset: {
             width: 0,
